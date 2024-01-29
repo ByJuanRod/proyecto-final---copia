@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { titulo} = Astro.props;
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="es">
@@ -14,6 +15,7 @@ const { titulo} = Astro.props;
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <title>{titulo}</title>
+    <ViewTransitions/>
   </head>
   <body>
     <slot />

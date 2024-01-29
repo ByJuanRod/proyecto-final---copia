@@ -1,15 +1,26 @@
-
+---
+import TituloSeccion from "../TituloSeccion.astro"
+---
 
 <style>
     .banner{
         width: 100%;
-        height: 60vh;
-        min-height: 400px;
+        min-height: 600px;
+        padding: 40px;
+        background: linear-gradient(70deg, rgba(0, 0, 0, 0.726) 60%, rgba(61, 59, 59, 0.589) 80%, rgba(7, 7, 7, 0.753)) ,url(https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_1280.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        border-bottom: 2px solid var(--colorFuente);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
 
 </style>
 
 <header class="banner">
-    
-</header>
+    <TituloSeccion titulo="¿Algun Evento Importante?" />
+    <a href="">¡Contratanos!</a>
+</header> 
