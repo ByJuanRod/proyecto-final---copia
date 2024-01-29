@@ -1,0 +1,40 @@
+{
+    "Testimonios":[
+        {
+            "Persona": "Ana López",
+            "Descripcion": "La calidad y originalidad en las decoraciones de DreamCreators superaron mis expectativas. El evento lució espectacular, y la atención al cliente fue impecable. Definitivamente, una elección acertada para hacer de mi celebración un momento inolvidable."
+        },
+        {
+            "Persona": "Roberto Soto",
+            "Descripcion": "Contraté a DreamCreators para decorar el lanzamiento de mi nuevo producto. La creatividad en el diseño y la puntualidad en la entrega fueron destacables. Aunque inicialmente tenía algunas dudas sobre el precio, la inversión valió cada centavo. ¡Altamente recomendados!"
+        },
+        {
+            "Persona": "María González",
+            "Descripcion": "Me encantó la flexibilidad de DreamCreators para adaptarse a mis preferencias y presupuesto. A pesar de algunos cambios de último minuto, el equipo logró crear una atmósfera encantadora en mi evento. ¡Gracias por hacerlo tan especial!"
+        },
+        {
+            "Persona": "Juan Torres",
+            "Descripcion": "Experimenté un servicio excepcional de DreamCreators. Aprecio la atención a los detalles y la disposición para trabajar estrechamente con nosotros. Tal vez podrían considerar ofrecer paquetes personalizables para adaptarse a diferentes presupuestos."
+        },
+        {
+            "Persona": "Laura Martínez",
+            "Descripcion": "La profesionalidad de DreamCreators se reflejó en cada aspecto de nuestro evento. La calidad de las decoraciones y la eficiencia del equipo fueron notables. ¡Definitivamente volveremos a contar con sus servicios en futuras celebraciones!"
+        },
+        {
+            "Persona": "José Ramírez",
+            "Descripcion": "Quedamos impresionados con la creatividad y dedicación de DreamCreators al decorar nuestro aniversario. Cada detalle reflejaba nuestra historia y personalidad. Fue una experiencia única que recomendamos a todos."
+        },
+        {
+            "Persona": "Sofía Castillo",
+            "Descripcion": "DreamCreators hizo de nuestro evento corporativo un éxito total. La elegancia y profesionalismo en cada aspecto de la decoración fueron notables. Recibimos elogios de nuestros clientes y colaboradores. ¡Gracias por su excelente trabajo!"
+        },
+        {
+            "Persona": "Luisa Méndez",
+            "Descripcion": "Contraté a DreamCreators para decorar la fiesta de cumpleaños de mi hijo. La creatividad y la atención a los detalles fueron excepcionales. Los niños y los padres quedaron encantados. ¡Definitivamente los recomendaré!"
+        },
+        {
+            "Persona": "Carlos Antonio",
+            "Descripcion": "DreamCreators logró plasmar nuestra visión en la decoración de nuestra boda. Realmente al principio no me sentia muy seguro al momento de contratar una empresa de este tipo por experiencias que tuv en el pasado, Pero cuando pude observar lo que los chicos avian echo me quedo sorprendido!; ¡Hicieron un buen trabajo! y los recomiendo"
+        }
+    ]
+}

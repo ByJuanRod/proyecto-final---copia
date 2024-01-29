@@ -1,0 +1,49 @@
+---
+import Ventajas from "../../data/Ventajas.json";
+import TituloSeccion from "../TituloSeccion.astro";
+import Card from "../Card.astro";
+---
+
+<style>
+  .sc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ul {
+    color: white;
+    font-family: var(--texto);
+  }
+
+  @media (max-width: 820px)
+  {
+    .sc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  @media(max-width: 425px){
+    .sc{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  }
+</style>
+
+<section class="seccion">
+  <TituloSeccion titulo="Ventajas que Ofrecemos" />
+  <section class="sc">
+    {
+      Ventajas.Ventajas.map((vn) => {
+        return <Card Titulo={vn.Nombre} />;
+      })
+    }
+  </section>
+</section>

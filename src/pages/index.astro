@@ -1,0 +1,22 @@
+---
+import Contenedor from "../components/layout/Contenedor.astro"
+import Header from "../components/Header.astro"
+import "../style/index.css"
+import FAQ from "../components/secciones/FAQ.astro"
+import Footer from "../components/Footer.astro"
+import BServicios from "../components/banners/BServicios.astro"
+import BNosotros from "../components/banners/BNosotros.astro"
+import SecVentajas from "../components/secciones/SecVentajas.astro"
+---
+
+<Contenedor titulo="Bienvenido a Dream Creators">
+	<Header titulo="¡Llenando tus Eventos de Brillo!" texto="Nos encargaremos de volver ese evento fantasioso una realidad inolvidable."/>
+	<main>
+		<FAQ/>
+		<BServicios/>
+		<BNosotros/>
+		<SecVentajas/>
+	</main>
+	<Footer/>
+</Contenedor>
+

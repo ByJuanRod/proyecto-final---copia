@@ -1,0 +1,37 @@
+{
+    "Frecuentes":[
+        {
+            "Titulo":"¿Cuál es la política de garantía de nuestra empresa?",
+            "Respuesta":"Garantizamos la satisfacción de nuestros clientes. En caso de cualquier problema, estamos comprometidos a encontrar soluciones y superar las expectativas."
+        },
+        {
+            "Titulo": "¿En qué se diferencia nuestra empresa de la competencia?",
+            "Respuesta": "Nos destacamos por nuestra atención personalizada, la calidad de nuestros diseños y la flexibilidad para adaptarnos a las necesidades específicas de cada cliente."
+        },
+        {
+            "Titulo": "¿Cuáles son los servicios principales que ofrece nuestra empresa?",
+            "Respuesta": "Nuestra empresa se especializa en ofrecer servicios de decoración de eventos, creando ambientes únicos y memorables para nuestros clientes."
+        },
+        {
+            "Titulo":"¿Cómo puedo contactar a nuestra empresa para solicitar nuestros servicios?",
+            "Respuesta":"Puede contactarnos a través de nuestro sitio web, llamando a nuestro número de atención al cliente o visitándonos en nuestra sede principal."
+        },
+
+        {
+            "Titulo": "¿Ofrecen servicios de decoración para eventos corporativos?",
+            "Respuesta": "Sí, contamos con servicios especializados para eventos corporativos, adaptando nuestras decoraciones a la imagen y estilo de cada empresa."
+        },
+        {
+            "Titulo": "¿Cuánto tiempo de antelación se debe solicitar nuestros servicios para un evento?",
+            "Respuesta": "Recomendamos realizar la solicitud con al menos un mes de antelación para garantizar la disponibilidad y planificación adecuada."
+        },
+        {
+            "Titulo": "¿Se pueden personalizar las decoraciones según un tema específico?",
+            "Respuesta": "¡Por supuesto! Nos especializamos en personalizar las decoraciones según los temas y preferencias de nuestros clientes para crear eventos verdaderamente únicos."
+        },
+        {
+            "Titulo": "¿Cuáles son los métodos de pago aceptados por nuestra empresa?",
+            "Respuesta": "Aceptamos pagos a través de transferencias bancarias, así como en efectivo en pesos dominicanos."
+        }
+    ]
+}

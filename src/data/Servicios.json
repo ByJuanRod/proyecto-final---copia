@@ -1,0 +1,28 @@
+{
+    "Servicios":[
+        {
+            "Titulo": "Gestión de Utilería Exclusiva",
+            "Descripcion": "Nuestra oferta incluye la gestión integral de una amplia gama de utilería exclusiva para eventos. Desde mobiliario de alta calidad hasta elementos decorativos únicos, nos aseguramos de que cada detalle refleje la excelencia y sofisticación que caracteriza a DreamCreators."
+        },
+        {
+            "Titulo": "Sistema de Sonido de Alta Gama",
+            "Descripcion": "Contamos con tecnología de sonido de última generación para proporcionar una experiencia auditiva inigualable en cada evento que organizamos. Nuestro equipo profesional se encarga de la instalación y ajuste preciso para adaptarse a las necesidades específicas de cada cliente."
+        },
+        {
+            "Titulo": "Espacios Exclusivos para Eventos",
+            "Descripcion": "Ofrecemos acceso a salones exclusivos diseñados para brindar un entorno elegante y versátil. Nuestros espacios son adaptables a diferentes capacidades y estilos de eventos, proporcionando un escenario perfecto para cualquier ocasión."
+        },
+        {
+            "Titulo": "Servicio de Catering Personalizado",
+            "Descripcion": "Nuestro servicio de catering personalizado presenta una selección exquisita de opciones gastronómicas. Desde menús gourmet hasta alternativas adaptadas a necesidades dietéticas específicas, garantizamos una experiencia culinaria que deleitará a sus invitados."
+        },
+        {
+            "Titulo": "Diseño Personalizado de Invitaciones",
+            "Descripcion": "Nos especializamos en el diseño personalizado de invitaciones que reflejan la esencia y temática de cada evento. Cada invitación es una obra maestra única, asegurando una presentación excepcional desde el primer contacto con sus invitados."
+        },
+        {
+            "Titulo": "Coordinación Integral de Eventos",
+            "Descripcion": "Nuestro equipo altamente experimentado se encarga de la coordinación integral de cada evento. Desde la planificación inicial hasta la ejecución, nos aseguramos de que cada aspecto se desarrolle sin contratiempos, proporcionando a nuestros clientes la tranquilidad necesaria para disfrutar de su día especial."
+        }
+    ]
+}

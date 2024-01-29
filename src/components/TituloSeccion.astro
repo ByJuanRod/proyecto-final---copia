@@ -1,0 +1,38 @@
+---
+
+interface Props {
+    titulo: string,
+}
+
+const {titulo } = Astro.props;
+
+---
+
+
+<style>
+        h1{
+        font-size: 2.25rem;
+        color: var(--colorFuente);
+        font-family: var(--titulos);
+        text-align: center;
+        
+    }
+
+    hr{
+        border: 3px solid var(--colorFuente);
+        width: 60%;
+        display: block;
+        margin:auto;
+        border-radius: 10px;
+        margin-block-start: 15px;
+        margin-block-end: 40px;
+    }
+
+</style>
+
+<script>
+    
+</script>
+
+<h1>{titulo}</h1>
+<hr>

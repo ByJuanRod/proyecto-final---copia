@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat&family=Poppins:wght@200;400;700&display=swap');
+
+:root{
+  --texto: 'Poppins', sans-serif;
+  --texto2: 'Montserrat', sans-serif;
+  --titulos: 'Handlee', cursive;
+  --fondo: rgb(29, 28, 46);
+  --detalles: #c22c40;
+  --detalles2: rgb(240, 157, 41);
+  --enfasis2:rgb(246, 246, 246);
+  --enfasis:#57528c;
+  --fondo3: rgb(0,0,23);
+  --fondo2: #75CFD8;
+  --colorFuente: rgb(223, 220, 220);
+}
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.5s linear all;
+    z-index: 0;
+  }
+
+
+  body {
+    background-color: var(--fondo);
+    font-size: 16px;
+  }
+
+  ::-webkit-scrollbar{
+    background-color: #4444447a;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--detalles);
+    border-radius:10px;
+  }
+
+  @media (min-width: 1024px) {
+
+    body{
+      font-size: 14px;
+    }
+
+  }
+
+  @media (max-width: 425px)
+{
+    body{
+        font-size: 12px;
+    }
+}

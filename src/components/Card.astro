@@ -1,0 +1,49 @@
+---
+interface Props {
+    Titulo: string,
+}
+
+const {Titulo} = Astro.props
+---
+<style>
+
+    article{
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid var(--colorFuente);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    article:nth-child(-n + 3){
+        background: linear-gradient(90deg, rgba(194,44,64,1) 4%, rgba(240, 157, 41, 0.795) 87%);
+    }
+
+    article:nth-child(n+4){
+        background: linear-gradient(140deg, rgba(87,82,140,1) 4%, rgba(25,65,87,1) 87%);
+    }
+
+    p{
+		text-align: center;
+		font-size: 1.2rem;
+        font-family: var(--texto2);
+		color: var(--colorFuente);
+        font-weight: 700;
+        margin-block: 10px;
+    }
+
+    @media (max-width: 425px){
+        article:nth-child(odd){
+        background: linear-gradient(90deg, rgba(194,44,64,1) 4%, rgba(240, 157, 41, 0.795) 87%);
+    }
+
+    article:nth-child(even){
+        background: linear-gradient(140deg, rgba(87,82,140,1) 4%, rgba(25,65,87,1) 87%);
+    }
+    }
+</style>
+<article>
+    <p>{Titulo}</p>
+</article>

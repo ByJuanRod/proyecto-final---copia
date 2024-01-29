@@ -1,0 +1,39 @@
+---
+interface Props {
+    Titulo:string,
+    Descripcion: string
+}
+
+const {Titulo, Descripcion} = Astro.props
+---
+
+<style>
+    details{
+        background-color: var(--enfasis);
+        padding: 10px;
+        border-radius:10px;
+        font-family: var(--texto2);
+        font-weight: bold;
+        font-size: 1.15rem;
+        color: var(--colorFuente);
+        border: 2px solid var(--colorFuente);
+    }
+
+    summary{
+        cursor: pointer;
+    }
+
+    
+    details > p{
+        padding: 10px;
+        font-size: 1rem;
+        font-family: var(--texto);
+        font-weight: normal;
+        color: var(--colorFuente);
+    }
+</style>
+
+<details>
+    <summary>{Titulo}</summary>
+    <p>{Descripcion}</p>
+</details>

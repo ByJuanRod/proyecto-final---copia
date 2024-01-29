@@ -1,0 +1,30 @@
+<style>
+    div{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        position: fixed;
+        bottom: 5px;
+        z-index: 50;
+        background-color: var(--enfasis);
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        cursor: pointer;
+        align-items:center;
+    }
+
+    i{
+        font-size: 30px;
+        color: var(--colorFuente);
+    }
+</style>
+
+<script>
+    import { Scrollup } from "./ts/funciones.ts"
+    document.querySelector(".scroll")?.addEventListener("click",Scrollup);
+</script>
+
+<div class="scroll">
+    <i class="fi fi-rr-arrow-up"></i>
+</div>
