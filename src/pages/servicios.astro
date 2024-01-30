@@ -1,18 +1,19 @@
 ---
-import "../style/servicios.css"
+import "../style/index.css"
+
 import Contenedor from "../components/layout/Contenedor.astro"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import BContratanos from "../components/banners/BContratanos.astro"
-import { fade } from "astro:transitions"
+
+
 ---
 
 
 <Contenedor titulo="Servicios">
     <Header 
      titulo="!Descubre los Servicios que Ofrecemos¡"
-     texto="Conoce los eventos y recursos que ofrecemos para tus actividades."
-     transition:animate={fade({duration:"0.4s"})} />
+     texto="Conoce los eventos y recursos que ofrecemos para tus actividades." />
     <main>
         <BContratanos/>
     </main>
