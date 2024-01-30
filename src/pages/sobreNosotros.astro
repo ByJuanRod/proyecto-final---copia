@@ -1,7 +1,17 @@
 ---
 import Contenedor from "../components/layout/Contenedor.astro"
+import Header from "../components/Header.astro"
+import "../style/contenedor.css";
+import Filosofia from "../components/secciones/Filosofia.astro";
+import Footer from "../components/Footer.astro";
+import Valores from "../components/secciones/Valores.astro";
 ---
 
 <Contenedor titulo="Sobre Nosotros">
-    
+    <Header titulo="¡Somos Cream Creators!" texto="Descubre quienes son los encargados de convertir un evento de fantasía a una realidad." />
+    <main>
+        <Filosofia/>
+        <Valores/>
+    </main>
+    <Footer/>
 </Contenedor>

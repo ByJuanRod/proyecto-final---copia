@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets';
+
+
+interface Props {
+    titulo: string,
+    texto: string,
+}
+
+const {titulo = "", texto} = Astro.props;
+---
+<style>
+    article{
+        background: var(--enfasis);
+        padding: 20px;
+        border: 2px solid var(--colorFuente);
+        border-radius: 10px;
+    }
+
+    article > h1{
+        font-family: var(--titulos);
+        color: var(--colorFuente);
+        font-size: 1.6rem;
+
+    }
+
+    hr{
+        width: 60%;
+        border: 2px solid var(--colorFuente);
+        border-radius: 10px;
+        margin-block: 5px;
+    }
+
+    article > p{
+        font-size: 1.2rem;
+        font-family: var(--texto2);
+        color: var(--colorFuente);
+    }
+</style>
+
+{
+    <article> 
+        <h1>{titulo}</h1>
+        <hr/>
+        <p>{texto}</p>
+    </article> 
+}

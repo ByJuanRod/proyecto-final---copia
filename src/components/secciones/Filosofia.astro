@@ -1,0 +1,25 @@
+---
+import TituloSeccion from "../TituloSeccion.astro";
+import FilosofiaData from "../../data/Filosofia.json";
+import TempFilosofia from "../TempFilosofia.astro";
+---
+
+<style>
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+</style>
+
+<section class="seccion">
+    <TituloSeccion titulo="Filosofía de la Empresa" />
+
+    <section class="grilla">
+        {
+            FilosofiaData.FilosofiaData.map((dt) => {
+                return <TempFilosofia texto={dt.texto} titulo={dt.titulo} />
+            })
+        }
+    </section>
+</section>
