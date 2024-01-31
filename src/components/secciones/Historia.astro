@@ -1,0 +1,24 @@
+---
+import TituloSeccion from "../TituloSeccion.astro"
+import Valor from "../Valor.astro"
+import HistoriaData from "../../data/Historia.json";
+---
+
+<style>
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+</style>
+
+<section class="seccion">
+    <TituloSeccion titulo="Historia de la Empresa"/>
+    <section class="grilla">
+        {
+            HistoriaData.Historia.map((hs) => {
+                return <Valor texto={hs.texto} img={hs.img} nombre={hs.titulo} clase="hs" />
+            })
+        }
+    </section>
+</section>
