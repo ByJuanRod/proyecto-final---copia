@@ -1,7 +1,33 @@
 ---
 import TituloSeccion from "../TituloSeccion.astro"
+import ValoresData from "../../data/Valores.json";
+import Valor from "../Valor.astro";
 ---
+
+<style>
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+
+    @media (max-width: 768px) {
+        .grilla{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+</style>
 
 <section class="seccion">
     <TituloSeccion titulo="Valores" />
+
+    <section class="grilla">
+        {
+        ValoresData.Valores.map((val) => {
+            return <Valor nombre={val.Nombre} texto={val.Descripcion} img={val.img} />
+        })
+        
+    }
+    </section>
 </section>

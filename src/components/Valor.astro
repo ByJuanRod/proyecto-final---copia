@@ -1,0 +1,83 @@
+---
+interface Props {
+    nombre: string,
+    texto: string,
+    img: string
+}
+
+const {nombre, texto, img} = Astro.props;
+---
+
+<style>
+
+    img{
+        object-fit: contain;
+    }
+
+    p{
+        margin-top: 10px;
+    }
+
+    article{
+        border: 2px solid var(--colorFuente);
+        padding: 20px;
+        background-color: var(--detalles);
+        display: flex;
+        gap: 10px;
+        border-radius: 10px;;
+    }
+
+    aside > h1{
+        font-family: var(--titulos);
+        font-size: 1.5rem;
+        color: var(--colorFuente);
+
+    }
+
+    aside > hr{
+        width: 60%;
+        margin-block: 5px;
+        border: 2px solid var(--colorFuente);
+        border-radius: 10px;
+    }
+
+    aside > p{
+        color: var(--colorFuente);
+        font-size: 1rem;
+        font-family: var(--texto2);
+    }
+
+    @media (max-width: 1024px) {
+        article{
+            display: block;
+            padding: 20px;
+        }
+
+        img{
+            display: block;
+            margin: auto;
+        }
+
+        h1{
+            text-align: center;
+            margin-block: 10px;
+        }
+
+        hr{
+            display: block;
+            margin-inline: auto;
+        }
+
+
+    }
+
+</style>
+
+<article>
+    <img src={img} alt={nombre} loading="lazy">
+    <aside>
+        <h1>{nombre}</h1>
+        <hr>
+        <p>{texto}</p>
+    </aside>
+</article>

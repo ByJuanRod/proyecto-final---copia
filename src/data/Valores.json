@@ -1,8 +1,25 @@
 {
     "Valores":[
         {
-            "Nombre": "",
-            "Descripcion": ""
+            "Nombre": "Excelencia en el Servicio",
+            "Descripcion": "Representa el compromiso de la empresa para ofrecer una atención excepcional a cada cliente. Se refleja en la búsqueda constante de superar expectativas, brindando soluciones personalizadas y asegurando una experiencia satisfactoria en cada evento.",
+            "img": "https://cdn-icons-png.flaticon.com/128/4185/4185461.png"
+            
+        },
+        {
+            "Nombre":"Creatividad",
+            "Descripcion":"Es la capacidad de idear y materializar diseños innovadores y originales. Esta creatividad se traduce en propuestas únicas que capturan la esencia de cada evento, agregando un toque distintivo y memorables a cada decoración.",
+            "img":"https://cdn-icons-png.flaticon.com/128/4185/4185733.png"
+        },
+        {
+            "Nombre":"Atención al Detalle",
+            "Descripcion":"Se refiere al cuidado minucioso en cada aspecto de la decoración. Desde la selección de elementos decorativos hasta la disposición espacial, se presta atención a los detalles para garantizar la coherencia, armonía y perfección en cada ambiente creado.",
+            "img":"https://cdn-icons-png.flaticon.com/128/4185/4185572.png"
+        },
+        {
+            "Nombre":"Ética",
+            "Descripcion":"Representa el pilar fundamental que guía cada acción de la empresa. Se manifiesta en la integridad, transparencia y honestidad en todas las interacciones, desde las relaciones con los clientes hasta las decisiones internas.",
+            "img":"https://cdn-icons-png.flaticon.com/128/3790/3790039.png"
         }
     ]
 }
