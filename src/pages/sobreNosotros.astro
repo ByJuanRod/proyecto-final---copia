@@ -5,15 +5,17 @@ import "../style/contenedor.css";
 import Filosofia from "../components/secciones/Filosofia.astro";
 import Footer from "../components/Footer.astro";
 import Valores from "../components/secciones/Valores.astro";
-import Historia from "../components/Historia.astro";
+import Historia from "../components/secciones/Historia.astro";
+import BContactanos from "../components/banners/BContactanos.astro";
 ---
 
 <Contenedor titulo="Sobre Nosotros">
-    <Header titulo="¡Somos Cream Creators!" texto="Descubre quienes son los encargados de convertir un evento de fantasía a una realidad." />
+    <Header titulo="¡Somos Dream Creators!" texto="Descubre quienes son los encargados de convertir un evento de fantasía a una realidad." />
     <main>
         <Filosofia/>
         <Valores/>
         <Historia/>
+        <BContactanos/>
     </main>
     <Footer/>
 </Contenedor>

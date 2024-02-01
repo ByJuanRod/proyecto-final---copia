@@ -1,6 +1,6 @@
 ---
 import TituloSeccion from "../TituloSeccion.astro"
-import Valor from "../Valor.astro"
+import HistoriaTemp from "../HistoriaTemp.astro";
 import HistoriaData from "../../data/Historia.json";
 ---
 
@@ -10,6 +10,20 @@ import HistoriaData from "../../data/Historia.json";
         grid-template-columns: repeat(3,1fr);
         gap: 10px;
     }
+
+    @media (max-width:1024px) 
+    {
+        .grilla{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+    @media (max-width: 768px){
+        .grilla{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 </style>
 
 <section class="seccion">
@@ -17,7 +31,7 @@ import HistoriaData from "../../data/Historia.json";
     <section class="grilla">
         {
             HistoriaData.Historia.map((hs) => {
-                return <Valor texto={hs.texto} img={hs.img} nombre={hs.titulo} clase="hs" />
+                return <HistoriaTemp texto={hs.texto} img={hs.img} nombre={hs.titulo} />
             })
         }
     </section>

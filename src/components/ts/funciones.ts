@@ -9,7 +9,3 @@ export function EnviarComentario():void{
 export function MostrarBeneficios():void{
 
 }
-
-export function EvaluarContenido(texto:string):boolean{
-    return texto.length > 1;
-}

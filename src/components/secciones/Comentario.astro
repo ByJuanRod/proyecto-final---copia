@@ -1,0 +1,67 @@
+---
+
+import TituloSeccion  from "../TituloSeccion.astro";
+---
+
+<style>
+    article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    textarea{
+        padding:10px;
+        font-size: 1.2rem;
+        font-family: var(--texto);
+        border-radius: 10px;
+        min-height: 30vh;
+        outline: none;
+        border: 2px solid white;
+        background: linear-gradient(60deg, var(--fondo3) 50%,
+        var(--fondo) 50%) ;
+        background-attachment: fixed;
+        color: white;
+    }
+
+    textarea::placeholder{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.596)
+    }
+
+    button{
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-family: var(--titulos);
+        border: 2px solid white;
+        outline: 2px solid white;
+        border-radius: 10px;
+        background: var(--detalles2);
+        margin-block: 20px;
+        outline-offset: 5px;
+        cursor: pointer;
+        color: white;
+        transition: all ease 0.5s;
+    }
+
+    button:hover{
+        outline-offset: 10px;
+        transition: all ease 0.5s;
+        background-color: var(--detalles);
+    }
+</style>
+
+<script>
+import {EnviarComentario} from "../ts/funciones";
+document.querySelector(".comentario-btn")?.addEventListener("click", EnviarComentario);
+</script>
+
+<section class="seccion">
+    <TituloSeccion titulo="¡Cuéntanos lo que Opinas!"/>
+
+    <article>
+        <textarea class="comentario"placeholder="Dinos lo que piensas sobre DreamCreators" ></textarea>
+        <button  class="comentario-btn">Enviar</button>
+    </article>
+</section>

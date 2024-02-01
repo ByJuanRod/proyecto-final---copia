@@ -2,18 +2,18 @@
     "Historia":[
         {
             "titulo": "¿Quienes somos?",
-            "img": "",
+            "img": "https://cdn-icons-png.flaticon.com/128/1624/1624589.png",
             "texto": "Somos un grupo de jóvenes con el objetivo de posicionarnos como una empresa líder en la creación de eventos. Ofrecemos un servicio personalizado para cada uno de nuestros clientes, asegurándonos de que podamos satisfacer las necesidades que ellos presentan específicamente. "
         },
         {
             "titulo":"Nuestro Público",
-            "img":"",
+            "img":"https://cdn-icons-png.flaticon.com/128/4185/4185501.png",
             "texto":"Nos dirigimos a individuos y organizaciones que buscan experiencias únicas y personalizadas en la planificación y decoración de sus eventos. Nuestro enfoque se centra en aquellos que valoran la originalidad y la atención al detalle, y desean confiar en expertos para crear eventos excepcionales que reflejen su estilo y personalidad."
         },
         {
             "titulo":"Historia",
-            "img":"",
-            "texto":"En el mes de agosto, un grupo de jóvenes emprendedores se unió con una visión común: transformar la forma en que las personas realizan sus eventos o actividades importantes. Sin embargo, esta historia comienza con la realización de diversos análisis e investigaciones que nos permitieron conocer las necesidades de la población vegana. Esta investigación fue la base que fundamentó este proyecto, ya que nos proporcionó resultados que indicaban la escasez de empresas dedicadas a la organización de eventos en la ciudad de La Vega. "
+            "img":"https://cdn-icons-png.flaticon.com/128/1800/1800196.png",
+            "texto":"En el mes de agosto, un grupo de jóvenes emprendedores se unió con una visión común: transformar la forma en que las personas realizan sus eventos o actividades importantes. Sin embargo, esta historia comienza con la realización de diversos análisis e investigaciones que nos permitieron conocer las necesidades de la población vegana."
         }
     ]
 }
