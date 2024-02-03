@@ -1,0 +1,47 @@
+---
+import TituloSeccion from "../TituloSeccion.astro"
+---
+
+<style>
+    .banner{
+        width: 100%;
+        min-height: 600px;
+        padding: 40px;
+       background: linear-gradient(50deg,
+       rgba(240, 157, 41, 0.575) 30%,
+        rgba(12, 7, 1, 0.747)30%,
+        rgba(12, 7, 1, 0.753)70%,
+        rgba(117, 208, 216, 0.623) 70%),
+        url(https://cdn.pixabay.com/photo/2016/12/28/20/30/wedding-1937022_640.jpg); 
+        background-size: cover;
+        background-attachment: fixed;
+        border-bottom: 2px solid var(--colorFuente);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    a{
+        padding: 20px 40px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: var(--texto);
+        color: var(--colorFuente);
+        background: var(--enfasis);
+        border-radius: 50px;
+        border: 2px solid var(--colorFuente);
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    a:hover{
+        background:var(--detalles);
+    }
+
+</style>
+
+<header class="banner" >
+    <TituloSeccion titulo="¡Inicia Sesión y Descubre más Beneficios!" />
+    <a href="/Sesion">¡Inicia Sesión!</a>
+</header> 

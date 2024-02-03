@@ -6,6 +6,10 @@ export function EnviarComentario():void{
     alert("¡Gracias por su opinión!");
 }
 
-export function MostrarBeneficios():void{
+export function MostrarCaracteristicas(dialogo:HTMLDialogElement):void{
+    dialogo.showModal();
+}
 
+export function OcultarModal(dialogo:HTMLDialogElement):void{
+    dialogo.close(); 
 }
