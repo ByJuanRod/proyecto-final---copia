@@ -1,0 +1,39 @@
+---
+import DatosIntegrantes from "../../data/Integrantes.json"
+import TempIntegrantes from "../TempIntegrantes.astro"
+import TituloSeccion from "../TituloSeccion.astro"
+---
+
+<style>
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:30px;
+    }
+
+    @media (max-width: 1024px){
+        .grilla{
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .grilla{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+</style>
+
+<section class="seccion">
+    <TituloSeccion titulo="El Equipo"/>
+    <section class="grilla">
+        {
+            DatosIntegrantes.Integrantes.map((In) =>{
+                return <TempIntegrantes nombre={In.Nombre} imagen={In.Imagen} />
+            })
+        }
+    </section>
+
+</section>

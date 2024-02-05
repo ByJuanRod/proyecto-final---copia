@@ -9,9 +9,17 @@ const {nombre, imagen } = Astro.props
 
 <style>
 
+    article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
     img{
-        width: 100%;
+        aspect-ratio: 1/1;
+        width: 200px;
         height: 200px;
+        display: block;
+        margin-inline: auto;
         object-fit: cover;
         outline: 3px solid transparent;
         outline-offset: 10px;
@@ -29,13 +37,14 @@ const {nombre, imagen } = Astro.props
         font-family: var(--titulos);
         font-size: 1.3rem;
         margin-block: 10px;
-        text-wrap: balance;
         color: var(--colorFuente);
         text-align: center;
     }
+
+    
 </style>
 
 <article>
-    <img src={imagen} alt="">
+    <img src={imagen} alt={nombre} loading="lazy">
     <h2>{nombre}</h2>
 </article>

@@ -1,11 +1,74 @@
 ---
 import TituloSeccion from "../TituloSeccion.astro";
+import RedesData from "../../data/Redes.json";
 ---
 
 <style>
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+    }
 
+    article{
+        background-color: var(--detalles2);
+        padding: 10px;
+        border-radius: 10px;
+        border: 3px solid var(--colorFuente);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    img{
+        display: block;
+        margin-inline: auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+
+    a{
+        background-color: var(--detalles);
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: var(--titulos);
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: var(--colorFuente);
+        cursor: pointer;
+        border: 2px solid var(--colorFuente);
+    }
+
+    a:hover{
+        background-color: var(--enfasis);
+    }
+
+    @media (max-width: 768px) {
+        .grilla{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .grilla{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 </style>
 
 <section class="seccion">
     <TituloSeccion titulo="Contactos Rápidos" />
+    <section class="grilla">
+        {
+            RedesData.Redes.map(red => (
+                <article>
+                    <img src={red.img} alt=""/>
+                    <a href={red.url}>Contactar</a>
+                </article>   
+            ))
+        }
+    </section>
 </section>

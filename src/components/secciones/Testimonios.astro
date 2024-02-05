@@ -1,0 +1,116 @@
+---
+import TituloSeccion from "../TituloSeccion.astro";
+import TestimoniosData from "../../data/Testimonios.json";
+import Testimonio from "../Testimonio.astro";
+---
+
+<style>
+  .carousel {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid var(--colorFuente);
+    border-radius: 5px;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .btn-contenedor {
+    margin-block: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .btn {
+    color: var(--colorFuente);
+    font-family: var(--texto2);
+    padding: 10px 20px;
+    border: 2px solid var(--colorFuente);
+    margin-block: 5px;
+    cursor: pointer;
+    background-color: var(--fondo);
+    font-size: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .btn:hover{
+    background-color: var(--detalles);
+  }
+
+  @media (max-width: 375px) {
+    .btn-contenedor {
+      margin-block: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .btn{
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  let currentIndex: number = 0;
+
+  function showSlide(index: number): void {
+    const carouselInner: HTMLElement | null =
+      document.querySelector(".carousel-inner");
+    const totalItems: number =
+      document.querySelectorAll(".carousel-item").length;
+    if (carouselInner) {
+      if (index >= totalItems) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = totalItems - 1;
+      } else {
+        currentIndex = index;
+      }
+      const offset: string = `translateX(${-currentIndex * 100}%)`;
+      if (carouselInner.style) {
+        carouselInner.style.transform = offset;
+      }
+    }
+  }
+
+  function nextSlide(): void {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide(): void {
+    showSlide(currentIndex - 1);
+  }
+
+  const prev = document.getElementById("prev");
+
+  const next = document.getElementById("next");
+
+  next?.addEventListener("click", nextSlide);
+
+  prev?.addEventListener("click", prevSlide);
+</script>
+
+<section class="seccion">
+  <TituloSeccion titulo="Testimonios" />
+
+  <section class="carousel">
+    <div class="carousel-inner">
+      {
+        TestimoniosData.Testimonios.map((tr) => {
+          return <Testimonio Texto={tr.Descripcion} Persona={tr.Persona} />;
+        })
+      }
+    </div>
+  </section>
+  <section class="btn-contenedor">
+    <div class="btn arrow-left" id="prev">Anterior</div>
+    <div class="btn arrow-right" id="next">Siguiente</div>
+  </section>
+</section>
