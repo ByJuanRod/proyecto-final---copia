@@ -1,19 +1,77 @@
 ---
-import TituloSeccion from "../TituloSeccion.astro"
+import TituloSeccion from "../TituloSeccion.astro";
+import Evento from "../Evento.astro";
+import EventoData from "../../data/Eventos.json";
 ---
 
 <style>
-    
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    .grilla {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width:768px) {
+    .grilla {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px){
+    .grilla {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 </style>
 
-
 <script>
-    const emergente = document.querySelector(".emergente");
+  const boton = document.querySelectorAll(".info");
+  const dialog = document.querySelectorAll(".dlg");
+
+  const cerrar = document.querySelectorAll(".dlg > .cerrar");
+
+  cerrar.forEach((eso) => {
+    eso.addEventListener("click", (e) => {
+        dialog.forEach((dialogos) =>{
+            const dial = dialogos as HTMLDialogElement;
+            dial.close();
+    })
+    });
+  });
+
+  boton.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      dialog.forEach((dlg) => {
+        const dlgo = dlg as HTMLDialogElement;
+        const target = e.target as HTMLButtonElement;
+
+        if (dlg.getAttribute("data-aso") == target.getAttribute("data-aso")) {
+          dlgo.showModal();
+        }
+      });
+    });
+  });
 </script>
 
 <section class="seccion">
-    <TituloSeccion titulo="Eventos Disponibles"/>
-    <section class="grilla">
-        
-    </section>
+  <TituloSeccion titulo="Eventos Disponibles" />
+  <section class="grilla">
+    {
+      EventoData.Eventos.map((ev) => (
+        <Evento
+          Titulo={ev.Titulo}
+          Precio={ev.PrecioAproximado}
+          Descripcion={ev.Descripcion}
+          Estado={ev.Estado}
+          Anticipacion={ev.AnticipacionRecomendada}
+        />
+      ))
+    }
+  </section>
 </section>

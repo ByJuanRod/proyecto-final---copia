@@ -1,7 +1,180 @@
 ---
-interface Props {
+import TituloSeccion from './TituloSeccion.astro';
 
+interface Props {
+    Titulo:string,
+    Descripcion:string,
+    Estado:string,
+    Precio:string,
+    Anticipacion:string,
 }
 
-const {} = Astro.props;
+const {Titulo,Descripcion,Estado,Precio, Anticipacion} = Astro.props;
 ---
+
+<style>
+
+    dialog{
+        width: 50%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: var(--fondo);
+        border: 2px solid var(--colorFuente);
+        position: fixed;
+        left: 25%;
+        top: 10px;
+        z-index: 2000;
+    }
+
+    .divider{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    dialog > h1{
+        color: var(--colorFuente);
+        font-size: 1.8rem;
+    }
+
+
+    .cerrar{
+        background: var(--detalles);
+    }
+
+    .cerrar:hover{
+        background: var(--fondo3);
+        border-color: var(--enfasis);
+
+    }
+    
+
+    dialog::backdrop{
+        backdrop-filter: blur(10px);
+    }
+
+    
+    dialog > button{
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    dialog b{
+        color: var(--colorFuente);
+        font-family: var(--texto2);
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    aside{
+        background: var(--detalles);
+        padding: 20px 10px;
+        border-radius: 10px;
+        border: 2px solid var(--detalles2);
+    }
+    dialog span{
+        color: var(--colorFuente);
+        font-family: var(--texto2);
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    article{
+        background: var(--detalles);
+        padding: 20px 10px;
+        border-radius: 10px;
+        border: 2px solid var(--detalles2);
+    }
+
+    h1{
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: var(--titulos);
+        color: var(--colorFuente);
+    }
+
+    hr{
+        border: 3px solid var(--colorFuente);
+        border-radius: 10px;
+        width: 60%;
+        margin-inline: auto;
+        margin-block: 5px 10px;
+    }
+
+    p{
+        font-family: var(--texto2);
+        color:var(--colorFuente);
+        font-size: 1rem;
+        text-wrap: balance;
+    }
+
+    button{
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: var(--enfasis);
+        border: 2px solid var(--detalles2);
+        outline: none;
+        margin-top: 10px;
+        cursor: pointer;
+        color:var(--colorFuente);
+        font-family: var(--titulos);
+        font-size: 1.2rem;
+        cursor: pointer
+    }
+
+    button:hover{
+        background: var(--fondo);
+    }
+
+    .expanded{
+        background: var(--enfasis);
+        padding: 20px 10px;
+        border-radius: 10px;
+        border: 2px solid var(--detalles2);
+        grid-column: 1/3;
+    }
+
+    @media(max-width: 768px){
+        dialog{
+            width: 90%;
+            left: 5%;
+        }
+    }
+</style>
+
+<article>
+    <h1>{Titulo}</h1>
+    <hr>
+    <button class={"info"} data-aso={Titulo}>Más Información</button>
+</article>
+
+
+<dialog  class="dlg" data-aso={Titulo}>
+    <h1>{Titulo}</h1>
+    <hr>
+    <section class="divider">
+        <article>
+            <b>Anticipación Recomendada</b>
+            <br>
+            <span>{Anticipacion}</span>
+        </article>
+        <aside>
+            <b>Estado</b>
+            <br>
+            <span>{Estado}</span>
+        </aside>
+        <section class="expanded">
+            <b>Precio Aproximado</b>
+            <br>
+            <span>{Precio}</span>
+        </section>
+    </section>
+    
+    <br>
+    <b>Descripción: </b><span>{Descripcion}</span>
+    <button class="cerrar">Cerrar</button>
+</dialog>

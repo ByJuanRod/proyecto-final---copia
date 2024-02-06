@@ -5,35 +5,35 @@
             "Descripcion": "Celebre su unión en un entorno mágico y lleno de romance. Nuestro equipo se encargará de cada detalle para que su boda sea inolvidable.",
             "Estado": "Disponible",
             "PrecioAproximado": "A partir de 27,000 DOP (Dependiendo de los detalles del evento)",
-            "AnticipacionRecomendada": "Se recomienda reservar con al menos 6 meses de anticipación"
+            "AnticipacionRecomendada": "1 mes"
         },
         {
-            "Titulo": "Fiesta de Cumpleaños",
+            "Titulo": "Cumpleaños",
             "Descripcion": "Celebre un año más de vida con una fiesta personalizada. Desde decoraciones temáticas hasta entretenimiento, haremos que su celebración sea única.",
             "Estado": "Disponible",
             "PrecioAproximado": "A partir de 4,680 DOP (Dependiendo de los detalles del evento)",
-            "AnticipacionRecomendada": "Se recomienda reservar con al menos 4 semanas de anticipación"
+            "AnticipacionRecomendada": "4 semanas"
         },
         {
             "Titulo": "Evento Corporativo",
             "Descripcion": "Impresione a sus clientes y colaboradores con un evento corporativo de alto nivel. Diseñamos espacios y experiencias que reflejan la imagen y valores de su empresa.",
             "Estado": "Proximamente",
             "PrecioAproximado": "Próximamente disponible",
-            "AnticipacionRecomendada": "Próximamente disponible"
+            "AnticipacionRecomendada": "5 días"
         },
         {
             "Titulo": "Baby Shower",
             "Descripcion": "Celebre la llegada del nuevo miembro de la familia con un baby shower encantador. Diseñamos ambientes cálidos y acogedores para este momento especial.",
             "Estado": "Disponible",
             "PrecioAproximado": "A partir de 6,050 DOP (Dependiendo de los detalles del evento)",
-            "AnticipacionRecomendada": "Se recomienda reservar con al menos 3 semanas de anticipación"
+            "AnticipacionRecomendada": "3 semanas"
         },
         {
             "Titulo": "Aniversario",
             "Descripcion": "Reviva el amor y los momentos especiales en su aniversario. Creamos ambientes románticos y personalizados para celebrar su amor duradero.",
             "Estado": "Proximamente",
             "PrecioAproximado": "Próximamente disponible",
-            "AnticipacionRecomendada": "Se recomienda reservar con al menos 1 mes de anticipación"
+            "AnticipacionRecomendada": "1 Mes"
         }
     ]
 }
